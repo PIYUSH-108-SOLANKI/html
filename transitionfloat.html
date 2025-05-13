@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body{background-color: pink;
+        }
+        .heading {
+            overflow:auto;
+            margin: auto;
+            color: rgb(8, 9, 9);
+            width: 80px;
+            height: 80px;
+            background: rgb(219, 129, 26);
+            transition:  height 5s ,width 4s ;
+            text-align: center;
+            animation-name: example ;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+
+
+        }
+        @keyframes example  {
+            from{
+                top: 10px;
+                background-color: orange;
+            }
+            to{
+                top: 200px;
+                background-color: green;
+            }
+
+
+
+        }
+
+        .heading:hover {
+            width: 500px;
+            height: 200px;
+
+        }
+        .pic img {
+            width: 250px;
+            height: 250px;
+        }
+        .pic{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            transition:  height 5s ,width 4s ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading"><h1 >Happy Birthday naman</h1></div>
+    <p>Hey i am a paragraph !!!!</p>
+
+</body>
+</html>

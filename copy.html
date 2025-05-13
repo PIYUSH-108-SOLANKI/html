@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        text-decoration: none;
+        margin: 0px;
+    }
+
+    .container{
+        height: 350px;
+        width: 100%;
+        background:radial-gradient(rgb(69, 9, 112) , rgb(74, 74, 220));
+        text-align: center;
+    
+    
+    }
+    .head{
+        color: white;
+        padding-top: 30px;
+        font-size: 38px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .sub{
+        color: white;
+        padding: 40px;
+        font-family: sans-serif;
+    }
+    .button{
+        margin-top: 25px;
+        padding: 12px 30px;
+        background: #fff;
+        color: #2575fc;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    .core{ text-align: center;
+        padding: 35px ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: burlywood;
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 40px;
+        margin:auto;
+        
+    }
+    .service-box{
+        border:  4px solid rgb(235, 232, 232);
+        box-shadow:10px 0px 10px rgb(207, 194, 194);
+        border-radius: 10%;
+        width: 100%;
+        height: 250px;
+        gap: 50px;
+    }
+    .services1{
+        color: lightskyblue;
+        text-align: center;
+        font-size: 30px ;
+    }
+    .service-boxdes{
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+    }
+
+
+
+</style>
+<body>
+    <div class="container">
+       <h1 class="head"> We Design Digital Experiences </h1> 
+       <p class="sub">Creative solutions for modern brands</p>
+       <button class="button"><a href="https://www.merriam-webster.com/dictionary/service">Get Started</a></button>
+    </div>
+    <div class="core">
+        <h1 class="core">Our Core Services</h1>
+    </div>
+    <div class="services">
+    <div class="service-box">
+        <h4 class="services1">web dev</h4>
+        <p class="service-boxdes">Beautiful and intuitive interfaces for your users.</p>
+    </div>
+     <div class="service-box">
+        <h4 class="services1">web dev</h4>
+     </div>
+    <div class="service-box">
+        <h4 class="services1">web dev</h4>
+    </div>
+    <div class="service-box">
+        <h4 class="services1">web dev</h4>
+    </div>
+    
+    </div>
+</body>
+</html>

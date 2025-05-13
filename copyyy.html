@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Agency Services</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<style>* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7f9;
+    color: #333;
+  }
+  
+  /* Header using Flexbox */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e2f;
+    color: white;
+    padding: 20px 40px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Hero Section with Animation */
+  .hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+  }
+  
+  .animated-text {
+    font-size: 42px;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .hero p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .cta-button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #fff;
+    color: #2575fc;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .service-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, background-color 0.4s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background-color: #e3f2fd;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #1e88e5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .service-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }</style>
+<body>
+
+  <header class="main-header">
+    <div class="logo">CreativeEdge</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="animated-text">We Design Digital Experiences</h1>
+    <p>Creative solutions for modern brands</p>
+    <button class="cta-button">Explore Services</button>
+  </section>
+
+  <section class="services">
+    <h2>Our Core Services</h2>
+    <div class="service-flex">
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Beautiful and intuitive interfaces for your users.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Fast, responsive, and accessible websites.</p>
+      </div>
+      <div class="card">
+        <h3>Brand Identity</h3>
+        <p>Craft a compelling story through design.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Strategy</h3>
+        <p>Boost your visibility with smart optimization.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
