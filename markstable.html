@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            border: 4px solid red;
+        }
+    </style>
+
+</head>
+<body >
+    <table border="n" id="studentTable" style="margin: auto;">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Marks</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Naman sethi</td>
+                <td>90.99</td>
+            </tr>
+            <tr>
+                <td>Mandar salunkhe</td>
+                <td>89.99</td>
+            </tr>
+            <tr>
+                <td>Rayan Rawat</td>
+                <td>75.34</td>
+            </tr>
+            <tr>
+                <td>Perni Bharat Raghvendra</td>
+                <td>73.00</td>
+            </tr> 
+            <tr>
+                <td>Adarsh singh</td>
+                <td>93.67</td>
+            </tr>            
+        </tbody>
+    </table>
+        <script>
+  var rows = document.querySelectorAll("#studentTable tbody tr");
+
+  for (var i = 0; i < rows.length; i++) {
+    var marks = parseInt(rows[i].cells[1].innerText);
+    if (marks < 80) {
+      rows[i].style.backgroundColor = "lightcoral";
+    }
+    if (marks > 80) {
+      rows[i].style.backgroundColor = "pink";
+    }
+  }
+</script>
+</body>
+</html>
