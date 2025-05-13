@@ -25,7 +25,59 @@
     table{
         margin: auto;
     }
-
+        body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      border: 2px solid #0f6da0;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    box-shadow: 0 0 10px #00f, 0 0 20px #00f;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #38a6c4;
+      border-radius: 8px;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .gender-options {
+      margin-top: 5px;
+    }
+    .gender-options label {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
 </style>
 <body style="text-align: center; " >
     <header>
@@ -40,6 +92,7 @@
             <a href="#">Services</a> &nbsp;
             <a href="#">Contact</a> &nbsp;
             <a href="#featues">featues</a> &nbsp;
+            <a href="#register">register</a> &nbsp;
     </nav>
     </header>
     <main>
@@ -67,8 +120,8 @@
 
         </section>
         <section id="Services">
-            <table border="1" cellpadding="8" cellspacing="0">
-  <thead>
+             <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
     <tr>
       <th>Service ID</th>
       <th>Service Name</th>
@@ -108,14 +161,58 @@
     </tr>
   </tbody>
 </table>
-</section>
+        </section>
 
 <div id="Contact">
     <img src="https://images.unsplash.com/photo-1630243269501-d4abbafe1d1f?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" height="100">
     <img src="https://images.unsplash.com/photo-1741500811440-ddafc2073b30?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNtYXJ0JTIwZ2FkZXRzfGVufDB8fDB8fHww" alt=""height="100">
     <img src="https://images.unsplash.com/photo-1465447142348-e9952c393450?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" height="100">
 </div>
+<section class="register">
+      <form>
+    <h2>Registration Form</h2>
+
+    <fieldset>
+      <legend>Personal Info</legend>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label>Gender:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Info</legend>
+
+      <label for="course">Course Name:</label>
+      <select id="course" name="course" required>
+        <option value="">--Select a Course--</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+      </select>
+    </fieldset>
+
+    <button type="submit">Register</button>
+  </form>
+
+</section>
+
+
     </main>
+
     <footer>
         <div class="footer-content" background-color="black">
             <h2>Stay Connected</h2>
