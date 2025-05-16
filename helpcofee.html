@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help</title>
+</head>
+<style>
+    a{
+        color: brown;
+    }
+    *{
+        text-decoration: none;
+        margin: 0;
+    }
+    .brandname{
+        font-weight: bolder;
+        font-style: italic;
+        padding-left: 30px;
+    }
+    .navbar{
+        height: 70px;
+        background-color: rgb(238, 200, 150);
+        display: flex;
+        padding: 30px;
+    }
+    .logo{
+        transform: translate(-550px,-15px); 
+
+    }
+    .nav-links{
+        text-align: center;
+        transform: translate(480px,70px); 
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: brown;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+
+    }
+    a:hover{
+        font-size: larger;
+        box-shadow: 4px 4px 12px rgba(12, 12, 12, 0.7);
+        border-radius: 10%;
+
+    }
+     .footer-content{
+        height: 100px;
+        background-color: rgb(235, 186, 122);
+    }
+    .contactus {
+    height: 600px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    background-color: rgb(248, 223, 185); 
+}
+
+    .contactuscard {
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: rgb(209, 164, 80); 
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    padding: 50px;
+    overflow: auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+
+
+</style>
+<body>
+    <nav class="navbar">
+       <div class="brandname"><h1>CoffeeLatte</h1></div>
+        <div class="nav-links">
+            <p><a href="homecoffeelatte.html" target="blank">Home  </a></p>
+            <p><a href="contactus.html" target="blank">ContactUs</a></p>
+            <p><a href="helpcofee.html">Help</a></p>
+            <p><a href="aboutus.html">AboutUs</a></p>
+            </div>
+            <div class="logo">
+                <img src="https://img.freepik.com/premium-vector/coffee-beans-icon-isolated-beige-background-vector-illustration_95164-1075.jpg?w=360" width="60px" height="60px" alt="">
+
+            </div>
+    </nav>
+    <div class="contactus">
+        <div class="contactuscard">
+            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px; padding: 20px;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+
+    <button type="submit" style="padding: 10px; background-color: brown; color: white; border: none; border-radius: 5px;" onclick="showPopup()">Submit</button>
+   
+
+</form>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content" background-color="black">
+            <h3>Stay Connected</h3>
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <div class="socials">
+            </div>
+        </div>
+    </footer>
+    <script>
+    function showPopup() {
+        alert("Thank you! Our team will connect with you shortly.");
+        return true; 
+    }
+</script>
+<script>
+function validateForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const phoneRegex = /^[0-9]{10}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name === "" || email === "" || phone === "" || message === "") {
+        alert("Please fill in all fields.");
+        return false;
+    }
+
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    if (!phoneRegex.test(phone)) {
+        alert("Phone number must be exactly 10 digits.");
+        return false;
+    }
+
+    if (message.length < 10) {
+        alert("Please enter a message with at least 10 characters.");
+        return false;
+    }
+    alert("Thank you! Our team will connect with you shortly.");
+    return true;
+}
+</script>
+
+</html>

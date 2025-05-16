@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoffeeLatte | Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a {
+      color: rgb(16, 7, 7);
+    }
+
+    .navbar {
+      height: 70px;
+      background: radial-gradient(burlywood, rgb(211, 182, 124));
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      justify-content: space-between;
+    }
+
+    .brandname h1 {
+      font-weight: bolder;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .nav-links a:hover {
+      font-size: larger;
+      box-shadow: 4px 4px 12px rgba(12, 12, 12, 0.7);
+      border-radius: 10%;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .homecontent {
+      height: 700px;
+      background-image: url("https://images.unsplash.com/photo-1595613126317-33b9857e6e56?w=1200");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-text {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      padding: 10px 25px;
+      background-color: #d2691e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero-text button:hover {
+      background-color: #a0522d;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px;
+      background-color: #f5e1c3;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .footer-content {
+      background-color: rgb(235, 186, 122);
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .footer-content h3 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://img.freepik.com/premium-vector/coffee-beans-icon-isolated-beige-background-vector-illustration_95164-1075.jpg?w=360" alt="logo">
+    </div>
+    <div class="brandname">
+      <h1>CoffeeLatte</h1>
+    </div>
+    <div class="nav-links">
+      <a href="homecoffeelatte.html">Home</a>
+      <a href="contactus.html" target="_blank">ContactUs</a>
+      <a href="helpcofee.html" target="_blank">Help</a>
+      <a href="aboutus.html" target="blank">AboutUs</a>
+    </div>
+  </nav>
+
+
+  <div class="homecontent" id="Home">
+    <div class="hero-text">
+      <h1>Welcome to CoffeeLatte</h1>
+      <p>Where every sip tells a story...</p>
+      <button>Explore Menu</button>
+    </div>
+  </div>
+
+
+  <section class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwcmVzc298ZW58MHx8MHx8fDA%3D" alt="Espresso">
+      <h3>Espresso</h3>
+      <p>Rich and bold flavor, perfectly brewed.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGF0dGV8ZW58MHx8MHx8fDA%3D" alt="Latte">
+      <h3>Latte</h3>
+      <p>Smooth and creamy with a touch of art.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1724119201704-5e99f9c56a20?q=80&w=2122&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+      <p>Foamy, warm, and topped with love.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-content">
+      <h3>Stay Connected</h3>
+      <p>&copy; 2025 CoffeeLatte. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
